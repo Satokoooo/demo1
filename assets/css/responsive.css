@@ -1,0 +1,661 @@
+@charset "UTF-8";
+/* sp画面 */
+@media screen and (min-width: 320px) {
+    p {
+        font-size: 1.3rem;
+        line-height: 1.6;
+    }
+    /* ---------layout-------------------------------------------
+    ---------------------------------------------------------- */
+    .l-header {
+        height: 60px;
+    }
+
+    .l-header__container {
+        padding: 10px 15px;
+    }
+
+    .l-header__logoWrap img {
+        height: 40px;
+    }
+
+    .l-hero {
+        background-image: url(../img/sp_top.png);
+        height: 50vh;
+    }
+
+    .l-floatingFooter {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px -1px 4px rgba(165, 165, 165, .4);
+    }
+
+    .l-floatingFooter__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        padding: 10px 15px;
+    }
+
+    .l-floatingFooter__tel {
+        margin-right: 20px;
+    }
+
+    .l-floatingFooter__tel a {
+        font-size: 2.2rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .l-floatingFooter__telIcon {
+        width: 1.8rem;
+        height: 1.8rem;
+        margin-left: 3px;
+        margin-right: 5px;
+    }
+
+    .l-floatingFooter__telText {
+        font-size: 1.1rem;
+    }
+
+    .l-section {
+        padding: 40px 20px 60px;
+    }
+
+    /* ---------component-------------------------------------------
+    ---------------------------------------------------------- */
+    .c-button a::before {
+        left: 16px;
+        width: 1.6rem;
+    }
+
+    .c-button a {
+        font-size: 1.4rem;
+        line-height: 40px;
+        padding: 0 15px 0 36px;
+    }
+
+    .c-button__big a small {
+        line-height: 2rem;
+        font-size: 1.2rem;
+    }
+
+    .c-button__big {
+        padding: 10px 0 12px;
+        width: 320px;
+        margin: 0 auto;
+    }
+
+    .c-button__big a {
+        text-align: center;
+        font-size: 1.6rem;
+        padding-left: 2.2rem;
+    }
+
+    .c-button__big a::before {
+        left: 24%;
+        width: 2.2rem;
+        height: 2.2rem;
+        bottom: 12px;
+    }
+
+    .c-section__title {
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin-bottom: 36px;
+    }
+
+    /* ---------problem-------------------------------------------
+    ---------------------------------------------------------- */
+    .p-problem__list li:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .p-problem__list span {
+        width: 2.4rem;
+        height: 2.4rem;
+        margin-right: 20px;
+    }
+
+    .p-problem__itemText {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+
+    /* ---------reason-------------------------------------------
+    ---------------------------------------------------------- */
+    .reason__title {
+        margin-bottom: 40px;
+    } 
+
+    .p-reason__commentWrap {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: -60px;
+    }
+
+    .p-reason__comment {
+        font-size: 1.6rem;
+        line-height: 2rem;
+        padding: 10px 0;
+    }
+
+    .p-reason__triangle::after {
+        border: 15px solid transparent;
+        border-top: 16px solid #F0A702;
+        bottom: -30px;
+        left: 50%;
+    }
+
+    .p-reason__list li:not(:last-child) {
+        margin-bottom: 50px;
+    }
+
+    .p-reason__item {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .p-reason__imageWrap img {
+        height: 180px;
+        width: 100%;
+    }
+
+    .p-reason__textWrap {
+        padding: 20px 15px 24px;
+    }
+
+    .p-reason__itemTitle {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+
+    .p-reason__listNum {
+        width: 60px;
+        height: 60px;
+        padding: 10px 0 8px;
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+    }
+
+    .p-reason__listNum p {
+        font-size: 3.0rem;
+    }
+
+    .p-reason__listNum small {
+        font-size: 1.2rem;
+    }
+
+    /* ---------contact-------------------------------------------
+    ---------------------------------------------------------- */
+    .p-contact__tel {
+        width: fit-content;
+        margin-top: 15px;
+    }
+
+    .p-contact__tel a {
+        font-size: 2.8rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .p-contact__telIcon {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin-right: 5px;
+    }
+
+    .p-contact__telText {
+        font-size: 1.3rem;
+    }
+
+    /* ---------step-------------------------------------------
+    ---------------------------------------------------------- */
+    .p-step__itemCircle {
+        width: 32px;
+        height: 32px;
+    }
+
+    .p-step__itemLine {
+        width: 3px;
+        height: 100%;
+    }
+
+    .p-step__itemNumber {
+        font-size: 1.6rem;
+        padding: 8px 20px 0 10px;
+    }
+
+    .p-step__itemTitle {
+        font-size: 1.4rem;
+        margin-bottom: 8px;
+    }
+
+    .p-step__itemText {
+        margin-bottom: 42px;
+    }
+
+    .no_margin {
+        margin: 0;
+    }
+}
+
+/* tablet画面 */
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .pc {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    a[href^="tel:"]{
+        pointer-events: none;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1.7;
+    }
+
+    /* ---------layout-------------------------------------------
+    ---------------------------------------------------------- */
+    .l-header {
+        height: 80px;
+    }
+
+    .l-header__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 30px;
+    }
+
+    .l-header__logoWrap img {
+        height: 60px;
+    }
+
+    .l-header__contactWrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .l-header__tel {
+        margin-right: 20px;
+    }
+
+    .l-header__tel a {
+        font-size: 2.7rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .l-header__telIcon {
+        width: 2rem;
+        height: 2rem;
+        margin-left: 3px;
+        margin-right: 5px;
+    }
+
+    .l-headr__telText {
+        font-size: 1.3rem;
+        line-height: 1;
+    }
+
+    .l-hero {
+        background-image: url(../img/tablet_top.png);
+    }
+
+    .l-floatingFooter__container {
+        display: none;
+    }
+
+    .l-section {
+        padding: 60px 30px 100px;
+    }
+
+    .l-section__container {
+        width: 80%;
+    }
+
+    /* ---------component-------------------------------------------
+    ---------------------------------------------------------- */
+    .c-button {
+        height: 46px;
+    }
+
+    .c-button:hover,
+    .c-button__big:hover {
+        opacity: 0.6;
+        transition: 0.3s;
+    }
+
+    .c-button a {
+        font-size: 1.8rem;
+        line-height: 46px;
+        padding: 0 24px 0 48px;
+    }
+
+    .c-button a::before {
+        left: 20px;
+        width: 2rem;
+    }
+
+    .c-button__big a small {
+        line-height: 2.4rem;
+        font-size: 1.6rem;
+    }
+
+    .c-button__big {
+        padding: 14px 0 16px;
+        width: 480px;
+    }
+
+    .c-button__big a {
+        font-size: 3.2rem;
+        padding-left: 3.6rem;
+    }
+
+    .c-button__big a::before {
+        left: 18%;
+        width: 3.6rem;
+        height: 3.6rem;
+        bottom: 18px;
+    }
+
+    .c-section__title {
+        font-size: 2.6rem;
+        line-height: 3rem;
+        margin-bottom: 48px;
+    }
+
+    /* ---------problem-------------------------------------------
+    ---------------------------------------------------------- */
+    .p-problem__list li:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .p-problem__list span {
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-right: 30px;
+    }
+
+    .p-problem__itemText {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+    }
+
+    /* ---------reason-------------------------------------------
+    ---------------------------------------------------------- */
+    .reason__title {
+        margin-bottom: 54px;
+    } 
+
+    .p-reason__commentWrap {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-top: -91px;
+    }
+
+    .p-reason__comment {
+        font-size: 2.4rem;
+        line-height: 3rem;
+        padding: 18px 0;
+    }
+
+    .p-reason__item {
+        width: 100%;
+    }
+
+    .p-reason__itemWrap {
+        display: flex;
+    }
+
+    .p-reason__imageWrap {
+        width: 40%;
+    }
+
+    .p-reason__imageWrap img{
+        height: 100%;
+    }
+
+    .p-reason__textWrap {
+        width: 60%;
+        padding: 30px 30px 48px;
+    }
+
+    .p-reason__itemTitle {
+        font-size: 2rem;
+        margin-bottom: 14px;
+    }
+
+    .p-reason__listNum {
+        width: 90px;
+        height: 90px;
+        padding: 14px 0 14px;
+        position: absolute;
+        top: -32px;
+        left: 20px;
+    }
+
+    .p-reason__list li:not(:last-child) {
+        margin-bottom: 80px;
+    }
+
+    .p-reason__listNum p {
+        font-size: 4.2rem;
+    }
+
+    .p-reason__listNum small {
+        font-weight: 400;
+        font-size: 1.6rem;
+        margin-bottom: 4px;
+    }
+
+    /* ---------contact-------------------------------------------
+    ---------------------------------------------------------- */
+    .p-contact__tel {
+        margin-top: 36px;
+    }
+
+    .p-contact__tel a {
+        font-size: 3.4rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .p-contact__telIcon {
+        width: 2.6rem;
+        height: 2.6rem;
+        margin-right: 5px;
+    }
+
+    .p-contact__telText {
+        font-size: 1.6rem;
+    }
+
+    /* ---------step-------------------------------------------
+    ---------------------------------------------------------- */
+    .p-step__item {
+        justify-content: space-between;
+    }
+
+    .p-step__textWrap {
+        width: 70%;
+    }
+
+    .p-step__itemCircle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .p-step__itemNumber {
+        font-size: 2.4rem;
+        padding: 8px 0 0 30px;
+    }
+
+    .p-step__itemTitle {
+        font-size: 2rem;
+        margin-bottom: 14px;
+    }
+
+    .p-step__itemText {
+        margin-bottom: 50px;
+    }
+}
+
+/* pc画面 */
+@media screen and (min-width: 1025px) {
+    p {
+        font-size: 1.8rem;
+        line-height: 1.8;
+    }
+
+    /* ---------layout-------------------------------------------
+    ---------------------------------------------------------- */
+    .l-header__tel {
+        margin-right: 30px;
+    }
+
+    .l-header__tel a {
+        font-size: 3.2rem;
+    }
+
+    .l-header__telIcon {
+        width: 2.4rem;
+        height: 2.4rem;
+    }
+
+    .l-headr__telText {
+        font-size: 1.5rem;
+    }
+
+    .l-hero {
+        background-image: url(../img/pc_top.png);
+        height: 70vh;
+    }
+
+    .l-section {
+        padding: 80px 50px 120px;
+    }
+
+    /* ---------component-------------------------------------------
+    ---------------------------------------------------------- */
+    .c-button {
+        height: 50px;
+    }
+
+    .c-button a {
+        font-size: 2.2rem;
+        line-height: 50px;
+        padding: 0 24px 0 56px;
+    }
+
+    .c-button a::before {
+        left: 24px;
+        width: 2.4rem;
+    }
+
+    .c-section__title {
+        font-size: 3.2rem;
+        line-height: 3.6rem;
+        margin-bottom: 54px;
+    }
+
+    /* ---------problem-------------------------------------------
+    ---------------------------------------------------------- */
+    .p-problem__list li:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .p-problem__list span {
+        width: 3.6rem;
+        height: 3.6rem;
+    }
+
+    .p-problem__itemText {
+        font-size: 2.4rem;
+        line-height: 1.6;
+    }
+
+    /* ---------reason-------------------------------------------
+    ---------------------------------------------------------- */
+    .reason__title {
+        margin-bottom: 54px;
+    } 
+
+    .p-reason__commentWrap {
+        margin-bottom: 40px;
+        margin-top: -115px;
+    }
+
+    .p-reason__comment {
+        font-size: 2.8rem;
+        line-height: 3rem;
+        padding: 20px 0;
+    }
+
+    .p-reason__triangle::after {
+        border: 24px solid transparent;
+        border-top: 26px solid #F0A702;
+        bottom: -50px;
+    }
+
+    .p-reason__imageWrap {
+        width: 43%;
+    }
+
+    .p-reason__textWrap {
+        width: 57%;
+    }
+
+    .p-reason__itemTitle {
+        font-size: 2.4rem;
+        margin-bottom: 16px;
+    }
+
+    /* ---------contact-------------------------------------------
+    ---------------------------------------------------------- */
+    .p-contact__tel {
+        margin-top: 48px;
+    }
+
+    .p-contact__tel a {
+        font-size: 3.8rem;
+    }
+
+    .p-contact__telIcon {
+        width: 2.8rem;
+        height: 2.8rem;
+        margin-right: 8px;
+    }
+
+    .p-contact__telText {
+        font-size: 1.8rem;
+    }
+
+    /* ---------step-------------------------------------------
+    ---------------------------------------------------------- */
+    .p-step__itemCircle {
+        width: 46px;
+        height: 46px;
+    }
+
+    .p-step__itemNumber {
+        font-size: 2.8rem;
+        padding: 10px 0 0 42px;
+    }
+
+    .p-step__itemTitle {
+        font-size: 2.4rem;
+        margin-bottom: 16px;
+    }
+
+    .p-step__itemText {
+        margin-bottom: 80px;
+    }
+}
